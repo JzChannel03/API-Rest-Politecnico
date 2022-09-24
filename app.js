@@ -9,6 +9,7 @@ const swaggerOptions = require('./SwaggerOptions');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const teacherRouter = require('./routes/teacher')
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/hello', indexRouter);
 app.use('/users', usersRouter);
+app.use('/teacher', teacherRouter);
 
 const specs = swaggerJsdoc(swaggerOptions);
 app.use(

@@ -1,0 +1,10 @@
+extends layout
+block content
+        table(border='1')
+            tr
+                each key in keys
+                    th= key
+            each storeItem in arr
+                tr
+                    each key in keys
+                        td= storeItem[key]

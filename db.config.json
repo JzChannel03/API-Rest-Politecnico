@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "user": "jz03",
+  "password": "0033",
+  "database": "apipolitecnicodb",
+  "port": "3307"
+}

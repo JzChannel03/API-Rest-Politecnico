@@ -20,9 +20,15 @@ const swaggerOptions = {
             {
                 url: "http://localhost:3000/hello",
             },
+            {
+                url: "http://localhost:3000/users",
+            },
+            {
+                url: "http://localhost:3000/teacher",
+            },
         ],
     },
-    apis: ["./routes/index.js"],
+    apis: ["./routes/index.js", "./routes/teacher.js", "./routes/users.js"],
 };
 
 module.exports = swaggerOptions;
